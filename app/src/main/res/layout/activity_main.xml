@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9791a"
+    tools:context="com.example.bulbul.currencyconverter.MainActivity">
+
+    <EditText
+        android:id="@+id/amountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Amount in BDT"
+        android:background="#e4c288"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:textColor="#ae3030"
+        android:inputType="number"
+
+        />
+
+    <Button
+        android:id="@+id/buttonConver"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:onClick="clickMe"
+        android:text="Convert"
+        android:background="#eab852"
+        android:textColor="#5e5b5b"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/amountText"
+        android:layout_alignLeft="@+id/amountText"
+        android:layout_alignStart="@+id/amountText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Dollar"
+        android:textColor="#5e5b5b"
+        android:background="#eab852"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/buttonConver"
+        android:layout_alignLeft="@+id/buttonConver"
+        android:layout_alignStart="@+id/buttonConver"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dollar"
+        android:inputType="textPersonName"
+        android:textColor="#5e5b5b"
+        android:background="#e4c288"
+        android:padding="8dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/clearId"
+        android:layout_alignEnd="@+id/clearId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Pound"
+        android:textColor="#5e5b5b"
+        android:background="#eab852"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pound"
+        android:inputType="textPersonName"
+        android:textColor="#5e5b5b"
+        android:background="#e4c288"
+        android:padding="8dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Euro"
+        android:textColor="#5e5b5b"
+        android:background="#eab852"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Euro"
+        android:inputType="textPersonName"
+        android:textColor="#5e5b5b"
+        android:background="#e4c288"
+        android:padding="8dp"
+
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Rial"
+        android:textColor="#5e5b5b"
+        android:background="#eab852"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Rial"
+        android:inputType="textPersonName"
+        android:textColor="#5e5b5b"
+        android:background="#e4c288"
+        android:padding="8dp"
+
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <Button
+        android:id="@+id/clearId"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:background="#eab852"
+        android:textColor="#5e5b5b"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="clearData"
+        android:layout_alignTop="@+id/buttonConver"
+        android:layout_alignRight="@+id/amountText"
+        android:layout_alignEnd="@+id/amountText" />
+
+
+</RelativeLayout>
